@@ -1,0 +1,5 @@
+{
+    "image":"mcr.microsoft.com/vscode/devcontainers/typescript-node:18",
+    "forwardPorts": [ 4200 ],
+	"postCreateCommand": "npm i"
+}
