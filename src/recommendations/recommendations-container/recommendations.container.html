@@ -1,0 +1,11 @@
+    <h2>Concepts d'architecture</h2>
+    <p>Comment organiser et structurer son code ?</p>
+
+    <div class="card-container">
+        <app-recommendation *ngFor="let recommendation of recommendations" [recommendation]="recommendation" (selected)="this.selectedRecommendation=$event"></app-recommendation>
+    </div>
+
+    <!-- Terminal -->
+    <div class="terminal">
+        <pre>{{this.selectedRecommendation.name}}</pre>
+    </div>
